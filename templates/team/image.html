@@ -1,0 +1,15 @@
+<div class="{% if class %}{{ class }}{% else %}col-xs-6 col-md-4 col-sm-4 col-lg-4{% endif %}">
+	<div class="team-image img-responsive">
+		<div class="team-info">
+			<div>
+				{{ name }}
+				<br>{{ pos }}<br>
+				{% if number %}
+					<br><span class="team-number">{{ number }}</span>
+				{% endif %}
+			</div>
+		</div>
+		<img src="/static/res/images/team/{{ img }}.jpg" class="img-responsive"/>
+		<div class="team-overlay"></div>
+	</div>
+</div>

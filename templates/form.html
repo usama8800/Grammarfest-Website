@@ -1,0 +1,81 @@
+{% extends "/base.html" %}
+{% block title %}Form | Grammar Fest{% endblock %}
+{% block nav_registration %}active{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/css/form.css"/>
+{% endblock %}
+{% block navbar_class %}navbar-fixed-top{% endblock %}
+{% block body %}
+<div id="main">
+	<div id="panel">
+		<div class="row">
+			<div class="col-xs-2 col-md-1">
+				<img src="/static/res/images/lgs.png" class="logo">
+			</div>
+			<div class="col-xs-6 col-md-9"></div>
+			<div class="col-xs-4 col-md-2">
+				<img src="/static/res/images/logo-small.png" class="logo">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 header">
+				Registration Form
+			</div>
+		</div>
+		{% if submitted %}
+			<br>
+			{% if database_error %}
+				<div class="row alert alert-danger">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					{{ database_error }}
+					There was an internal problem. Your form could not be submitted.
+				</div>
+			{% else %}
+				<div class="row alert alert-success">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					Thank you, your form has been submitted
+					{% for file in upload_errs %}
+						<div class="well well-sm alert-danger">{{ file }} could not be uploaded</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		{% endif %}
+		<form class="form-horizontal" id="registration-form" action="/form.php" method="POST" enctype= "multipart/form-data">
+			<div id="inputs">
+				<div class="subheading">Institution Details</div>
+				{{ include('/formInput.html', {type:"text", label:"Institution / Private Name", id:"institution-name", attrs:'data-validation="required"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Branch", id:"institution-branch"}) }}
+				{{ include('/formInput.html', {type:"text", label:"Institution's Email", id:"institution-email", attrs:'data-validation="required email"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Postal Address", id:"institution-address", attrs:'data-validation="required"'}) }}
+				{{ include('/formInput.html', {type:"radio", label:"Accomodations Required", options:[
+					{name: "institution-accomodations", id:"institution-accomodations-yes", value:"Yes"},
+					{name: "institution-accomodations", id:"institution-accomodations-no", value:"No", attrs:"checked"}
+				]}) }}
+
+				<div class="subheading">Staff Advisor (Optional)</div>
+				{{ include('/formInput.html', {type:"text", label:"Staff Advisor's Name", id:"staff-advisor-name", attrs:'data-validation="custom" data-validation-regexp="^[- a-zA-Z\']+$" data-validation-error-msg="That is not a valid name" data-validation-optional="true"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Cell Number", id:"staff-advisor-number", attrs:'data-validation="number" data-validation-optional="true"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"ID Card Number", id:"staff-advisor-nic", attrs:'data-validation="number" data-validation-optional="true"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Email Address", id:"staff-advisor-email", attrs:'data-validation="email" data-validation-optional="true"'}) }}
+
+				<div class="subheading">Head Delegate</div>
+				{{ include('/formInput.html', {type:"text", label:"Head Delegate Name", id:"delegate-1-name", attrs:'data-validation="custom" data-validation-regexp="^[- -zA-Z\']+$" data-validation-error-msg="That is not a valid name"'}) }}
+				{{ include('/formInput.html', {type:"file", label:"Photograph", id:"delegate-1-pic", attrs:'accept="image/*"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Head Delegate Number", id:"delegate-1-number", attrs:'data-validation="number"'}) }}
+				{{ include('/formInput.html', {type:"text", label:"Head Delegate Email", id:"delegate-1-email", attrs:'data-validation="email"'}) }}
+				{{ include('/formInput.html', {type:"event", label:"Event 1", id:"delegate-1-event-1", attrs:'data-validation="required"'}) }}
+				{{ include('/formInput.html', {type:"event", label:"Event 2", id:"delegate-1-event-2"}) }}
+				{{ include('/formInput.html', {type:"event", label:"Event 3", id:"delegate-1-event-3"}) }}
+			</div>
+			<div id="loading-icon"><img src="/static/res/images/loading.gif" /></div>
+			<div class="btn btn-primary" id="add-delegate" number="2">Add Delegate</div>
+			<div class="btn btn-danger disabled" id="remove-delegate">Remove Delegate</div>
+		 <br><div><input type="submit" id="submit-form" class="btn btn-success" value="Register"></div>
+		</form>
+	</div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="/static/plugins/form-validator.min.js"></script>
+<script src="/static/js/form.js"></script>
+{% endblock %}

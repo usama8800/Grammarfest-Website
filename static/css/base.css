@@ -1,0 +1,362 @@
+body {
+    padding-top: 50px;
+
+    font-family: "Poiret One", Arial;
+    font-weight: bold;
+
+    background: radial-gradient(at top, #dc8da0, #ba8faa);
+}
+img.navbar-img {
+    max-height: 100%;
+}
+a.navbar-img {
+    padding: 0;
+}
+.affix {
+    top: 0;
+}
+.affix-bottom {
+    position: fixed;
+}
+.dropdown-submenu>.dropdown-menu {
+    background: linear-gradient(to right, #dc8da0, #ba8faa);
+}
+.nav {
+    padding-left: 0;
+
+    font-family: "orbitron", sans-serif;
+
+    letter-spacing: .1em;
+}
+.navbar-nav {
+    padding-left: 0;
+}
+@media (min-width:768px) {
+    .container-fluid>.navbar-header {
+        margin-right: 5px;
+    }
+    .dropdown-submenu>.dropdown-menu {
+        background: linear-gradient(to left, #dc8da0, #ba8faa);
+    }
+    .nav {
+        padding-left: 40px;
+    }
+    .navbar-nav {
+        padding-left: 40px;
+    }
+}
+.navbar-custom,
+.dropdown-menu {
+    background: linear-gradient(to right, #dc8da0, #ba8faa);
+}
+.navbar {
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    margin-bottom: 0;
+
+    opacity: .9;
+    border-radius: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .55);
+
+    -webkit-backface-visibility: hidden;
+}
+.dropdown-menu>li>a {
+    font-weight: bold;
+}
+
+/*When hovering on item in navbar*/
+
+.navbar-nav>li>a:hover,
+li>a:focus,
+.navbar-nav .open>a:focus,
+.navbar-nav .open>a:hover,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li.open>a,
+.navbar-nav>li>a:focus,
+.navbar-nav .open>a {
+    background: #c56e8f;
+}
+
+/*Acitve items in navbar*/
+
+.navbar .active,
+.dropdown-menu>li.active>a,
+.dropdown-menu>li.active>a:hover,
+.navbar-nav>li.active>a:hover,
+.dropdown.active>a:focus,
+.dropdown-submenu>a.active,
+.dropdown-submenu>a.active:hover,
+.dropdown-submenu>a.active:focus,
+.dropdown.active>a {
+    background: #c2517c;
+}
+
+/*Text color of items in navbar*/
+
+.navbar-nav>li>a,
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li.active>a,
+.dropdown-menu>li.active>a:hover {
+    color: #902b52;
+}
+
+/*Button to expand navbar when on mobile*/
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #b66798;
+}
+.navbar-toggle {
+    border: 1px solid rgb(156, 102, 102);
+}
+#main {
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    padding-left: 5%;
+
+    background-image: url(/static/res/images/cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+@media (min-width: 470px) {
+    #main {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+@media (min-width: 850px) {
+    #main {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+#to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+
+    transition: all .5s;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: rgba(143, 96, 149, .5);
+
+    align-items: center;
+    justify-content: center;
+}
+#to-top:hover {
+    cursor: pointer;
+
+    background: rgba(143, 96, 149, .78);
+    box-shadow: 1px 2px 5px #000;
+}
+#to-top>.glyphicon {
+    font-size: 2em;
+
+    color: bisque;
+}
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    opacity: .9;
+    color: black;
+    background: radial-gradient(at bottom, #dc8da0, #ba8faa);
+}
+.footer h4 {
+    font-size: 12pt;
+    font-weight: bold;
+}
+@media (max-width:470px) {
+    .footer h4,
+    .social-link {
+        font-size: 10pt;
+    }
+}
+@media (max-width:370px) {
+    .footer h4,
+    .social-link {
+        font-size: 8pt;
+    }
+}
+.designer {
+    color: #337ab7;
+}
+.designer:hover {
+    text-decoration: none;
+
+    color: black;
+}
+.designer:focus {
+    text-decoration: none;
+}
+.copyright {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+
+    vertical-align: middle;
+}
+#social-links {
+    position: fixed;
+    top: 62%;
+    right: 0;
+    left: 100%;
+
+    font-size: large;
+}
+.social-link {
+    position: relative;
+    left: 0;
+
+    display: block;
+    width: 400%;
+    height: 40px;
+
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+    color: white;
+}
+.social-link:hover {
+    left: -100px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: white;
+}
+.social-link:not(:first-child) {
+    margin-top: 10px;
+}
+.social-link>img {
+    height: 70%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#facebook {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #3b579d;
+}
+#twitter {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #55acee;
+}
+#instagram {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(to right, #ff9c41, #e42f64, #7d52bd);
+}
+
+
+.team-info {
+    z-index: 1;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    font-variant: small-caps;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: rgba(0, 0, 0, 0);
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* style of numbers in .info */
+
+.team-number {
+    font-family: "Inconsolata", monospace;
+    font-size: normal;
+    font-weight: 400;
+    font-variant: normal;
+}
+
+.team-image {
+    position: relative;
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.team-image img {
+    min-width: 100%;
+    min-height: 100%;
+
+    border-radius: 8%;
+
+    flex-shrink: 0;
+}
+
+.team-image:after,
+.team-info,
+.team-overlay {
+    position: absolute;
+
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+    opacity: 0;
+    border-radius: 8%;
+}
+
+.team-image:after,
+.team-overlay {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "\A";
+
+    background: rgba(213, 66, 226, .5);
+}
+
+@media (min-width: 768px) {
+    .team-image:hover:after,
+    .team-info:hover {
+        opacity: 1;
+        color: #fff;
+    }
+}
+
+.team-hover {
+    opacity: 1;
+    color: #fff;
+}

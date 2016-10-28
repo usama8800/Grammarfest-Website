@@ -1,0 +1,41 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Battle of the Bands{% endblock %}
+{% block nav_events_music %}active{% endblock %}
+{% block nav_events_battleOfTheBands %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(./static/res/images/events/battleOfTheBands.jpg);
+{% endblock %}
+{% block event_title %}Battle of the Bands{% endblock %}
+{% block event_head_pic %}hassam_anwar{% endblock %}
+{% block event_head_name %}Hassam Anwar{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+	{{ include('/events/block.html', {text:"Do you play in a band and are looking for a platform to show your talent? Well then buckle up because on a performing arts event such as Grammarfest, BOTB is something you would not want to miss. We welcome all sorts of genres, from The Beatles to EP. It is one of the most entertaining performing arts session with large seating attendances every year. If you haven’t already registered now if you think your band has got what it takes to entertain people and leave them wanting more. It is important that you go through the rules section for your convenience."}) }}
+
+	{{ include('/events/block.html', {heading:"Rules", list:[
+		"A band must consist of 3 or more members.",
+		"Participants must keep in mind that the songs shouldn't  have a duration longer than 5 minutes so we can run the event punctually",
+		"Backing tracks are not allowed. Any use of backing tracks will result in disqualification. No exceptions. ",
+		"Team Grammarfest will not be responsible in case of any gear misplacement. ",
+		"Participants should not take more than 2 minutes for sound check.",
+		"All band members should be present in the auditorium when the event starts.",
+		"All performances will be judged and entirely based on your vocals and musicianship delivered as a band. You will be given your scores based on your stage presence, timing and melody. There are no additional scores for appearance.",
+		"Usage of Guitar pedals is allowed. (Contact your event head if you plan on using the Loop Station)",
+		"All genres and musical styles are accepted.",
+		"Backing vocals are allowed and will not be overlooked by the judges in terms of harmony deliverance. ",
+		"All bands are allowed to perform their original songs.",
+		"Avoid songs that contain profanity and bad language. Usage of songs with explicit content will be noted negatively by the judges.",
+		"If the band does not show up when they are called onstage for the third time, the event head would have to disqualify them.",
+		"Contact your event head if you need assistance in moving your gear backstage.",
+		"In case of any technical problems regarding the generator during your set, you are to start your performance again.",
+		"This is a two day event and all participants are to be seated within the hall during the event. You are not allowed to leave without informing the event head.",
+		"There will be a Winner and a Runner Up shield which will be awarded to the two bands that make it to the final round.",
+		"All the judge's decisions will be final.",
+		"During the event, in case of any last minute problems with the instruments, contact your event head and inform him about the issue as early as you can.",
+		"Any kind of misbehavior with the management or other participants will not be overlooked and may result in disqualification.",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Hassam Anwar - 0331-4378887
+
+{% endblock %}

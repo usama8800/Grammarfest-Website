@@ -1,0 +1,53 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Ad Making{% endblock %}
+{% block nav_events_media %}active{% endblock %}
+{% block nav_events_adMaking %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/adMaking.jpg);
+{% endblock %}
+{% block event_title %}Ad Making{% endblock %}
+{% block event_head_pic %}faateh_bin_hamad{% endblock %}
+{% block event_head_name %}fateh bin hammad{% endblock %}
+{% block event_head_pos %}event head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"Do you cringe every time the television screen lights up with yet another displeasing advertisement? Does it make you go “even I can make something better than that”? Well, here’s the chance to prove yourself, Grammarfest’16 presents Ad-making. Combine your creativity and technical ability to create one of a kind, eye catching advertisements that would leave everyone speechless!"}) }}
+
+    {{ include('/events/block.html', {heading:'Round 1', }) }} <br>
+
+    This round requires participants to create a video advertisement before the event. Participants will be given a product upon which the video must be based. <br>
+    * The video shall be uploaded to grammarafestofficial@gmail.com
+
+     {{ include('/events/block.html', {heading:'Product theme', list:[
+        "Coffee",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:'Rules', list:[
+		"The advertisement must be based on the product revealed by the event heads.",
+        "The submission must be made by 1PM, 23rd September",
+        "Videos with inappropriate content shall not be accepted as a valid submission.",
+	]}) }}
+
+    The file format of the video must be .MP4, .AVI or any format that can be played via VLC Player. <br>
+    Maximum Video length must be 1 minute.<br>
+    Winners will be selected by judges, their decisions being final.
+
+    {{ include('/events/block.html', {heading:'Round 2', list:[
+		"An advertisement based on taglines revealed on the first day of Grammarfest is to be made on-campus or in the premises of the school.",
+        "Participants have to submit this advertisement on the last day of Grammarfest, at ( Time to be decided ), via Email or USB.",
+        "No equipment shall be provided for the shooting of the ad.",
+        "The winners will be announced on the last day of Grammarfest.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Bonus  Round', list:[
+		"Participants will have to make a print ad, showing the product given in the first round in a creative way, using tools such as Photoshop or Illustrator.",
+        "This ad should be provided in either picture formats such as JPEG or PNG, PSD, or Ai File formats.",
+        "A separate award will be given for winning this round.",
+	]}) }}
+
+    * Note: Competing in this round will not affect judgements of Round 1 and Round 2.
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Fateh Bin Hammad - 0321-1459885
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Solo Dancing{% endblock %}
+{% block nav_events_danzaKuduro %}active{% endblock %}
+{% block nav_events_soloDancing %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/soloDancing.jpg);
+{% endblock %}
+{% block event_title %}Solo Dancing{% endblock %}
+{% block event_head_pic %}alizeh_jaffri{% endblock %}
+{% block event_head_name %}Alizeh Jaffri{% endblock %}
+{% block event_head_pos %}event head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {heading:"About the event:", list:[
+		"Each institution will be allowed only three individuals for participation.",
+        "Private individuals are allowed.",
+        "A light/sound manager(compulsory) and makeup artist/prop manager(optional) may accompany the solo dancer and must be registered as a team member.",
+        "If an institution sends in participants for both Team Dancing and Individual Dancing, then only one manager and makeup artist will be allowed to accompany them.",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:"Format", list:[
+		"There will be a total of 2 rounds.",
+        "One day will be given before the final round in order to rehearse and prepare for the final round.",
+    ]} )}}
+
+     {{ include('/events/block.html', {heading:"Round 1", list:[
+		"Participants are to present a freestyle dance performance.",
+        "A performance may last a minimum of 3 minutes and a maximum of 6 minutes.",
+        "There is no theme for this round.",
+        "Solo dancers are not allowed to use any props for this round.",
+        "Other stage equipment such as bench, chair, table etc can be provided by the management only if the dancers have informed the Dance Head beforehand on the day of rehearsals.",
+        "The Grammarfest'16 management will provide the dancers with a sound system and over head lights.",
+        "Dancers will be judged on their coordination, creativity, song and dance style selection, costume as well as the quality of the performance.",
+        "Dance rehearsals for the individuals will be conducted on campus within a week prior to the event. Date and time will be announced on the Official Page of Grammarfest.",
+        "Dancers who have qualified for the final round will also be announced on the Official Page.",
+        "Only 4 solo dancers will make it to the Final Round.",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:"Rules", list:[
+		"Music/Backing Track files need to be submitted to the Dance Head on the day of the rehearsals.",
+        "Make sure that you bring the music files on a USB only. Music/Backing Track files are to be in mp3, mp4 or AAC format only.",
+        "Also, make sure you have backups of the Music/Backing Track files in a USB later on the day of the main performance to avoid any confusion.",
+        "These are applicable for both rounds.",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:"Round 2 (day 3):", list:[
+		"This round is a prop-based round.",
+        "The prop(s) for this round will be disclosed shortly on the Official Facebook page of Grammarfest and the dance event.",
+        "The participant must noRunner Up Solo Dancet repeat his/her performance from Round 1.",
+        "All participants must follow the theme given. In case of failure to do so, the respective participant will be disqualified. ",
+    ]} )}}
+
+    {{ include('/events/block.html', {heading:"Awards"} )}}
+    Best Team Dance<br>
+    Runner Up Team Dance
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Alizeh Jaffri - 0334-2305406
+
+{% endblock %}

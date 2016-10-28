@@ -1,0 +1,37 @@
+{% extends "/base.html" %}
+{% block title %}Contact | Grammar Fest{% endblock %}
+{% block nav_contact %}active{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/css/contact.css"/>
+{% endblock %}
+{% block navbar_class %}navbar-fixed-top{% endblock %}
+{% block body %}
+<div id="main">
+	<div id="panel"> 
+      <div class="contact-heading">
+          Contact Us
+      </div>
+      <div class="row">
+          {{ include('/team/image.html', {name:'Mohid  Bin Amir', pos:'Director General', img:'mohid_amir', number:'0307-4731114'}) }}
+          {{ include('/team/image.html', {name:'Arooj Kaleem', pos:'Director General', img:'arooj_kaleem', number:'0322-4633768'}) }}
+          {{ include('/team/image.html', {name:'Areeb Lutfi', pos:'Director Finance', img:'areeb_lutfi', number:'0321-1459885'}) }}
+          {{ include('/team/image.html', {name:'Abdullah Shahzad', pos:'Director Communications', img:'abdullah_shahzad', number:'0331-6649932'}) }}
+          {{ include('/team/image.html', {name:'Osmaan Masood', pos:'Co-Director Communications', img:'osmaan_masood', number:'0323-8465544'}) }}
+          {{ include('/team/image.html', {name:'Raheem Zafar', pos:'Director Security', img:'raheem_zafar', number:'0300-8462977'}) }}
+<!--          {{ include('/team/image.html', {name:'Hijaab Fatima', pos:'Co-Director Security', img:'hijaab_fatima', number:'0323-1489005'}) }}-->
+
+      </div>
+      <div class="registration-team">
+          Registration Team
+      </div>
+      <div class="row">
+          {{ include('/team/image.html', {name:'Ayesha Ahmad', pos:'Director Registrations', img:'ayesha_ahmad', number:'0333-4339928'}) }}
+          {{ include('/team/image.html', {name:'Abbas Hassan', pos:'Co-Director Registrations', img:'abbas_hassan', number:'0321-4075070'}) }}
+          {{ include('/team/image.html', {name:'Muneeb Kashif', pos:'Director IT', img:'muneeb_kashif', number:'0333-4600488'}) }}
+      </div>
+        
+    </div>
+</div>    
+
+
+{% endblock %}

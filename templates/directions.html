@@ -1,0 +1,16 @@
+{% extends "/base.html" %}
+{% block title %}Directions | Grammar Fest{% endblock %}
+{% block nav_directions %}active{% endblock %}
+{% block head %}
+	<link rel="stylesheet" href="/static/css/directions.css"/>
+{% endblock %}
+{% block navbar_class %}navbar-fixed-top{% endblock %}
+{% block body %}
+	<div id="main">
+	    <div id="panel">
+	        <div class="embed-responsive embed-responsive-4by3">
+	    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.663543070136!2d74.44986911456844!3d31.53339965365488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190fab2aaa0833%3A0x8a5d024bcf980a43!2sLahore+Grammar+School+-+Paragon+City!5e0!3m2!1sen!2s!4v1468772308511" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	        </div>
+	    </div>
+	</div>
+{% endblock %}

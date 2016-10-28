@@ -1,0 +1,125 @@
+{% extends "/base.html" %}
+{% block title %}Registration | Grammar Fest{% endblock %}
+{% block nav_registration %}active{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="./static/css/registration.css"/>
+{% endblock %}
+{% block navbar_class %}navbar-fixed-top{% endblock %}
+{% block body %}
+<div id="main">
+	<div id="panel">
+		<div class="row registration-heading">
+			Registration
+		</div>
+		<div class="row subheading">
+			THE REGISTRATION PROCESS FOR GRAMMAR FEST’16 IS AS FOLLOWS:
+        </div>
+        <div class="row">
+    		<ol>
+    			<li>Fill in your team's details in the form below. Make sure that you write down all the required details, and that no important information is left out.</li>
+    			<li>Once you press the register button, a 'thank you' message should appear on your screen. This means that your registration form has been submitted successfully.</li>
+    			<li>The head delegate will receive a confirmation email from the registration team here at Grammar Fest. </li>
+    		</ol>
+        </div>
+        <br><br>
+        <div class="row subheading">
+			Points to remember:
+        </div>
+        <div class="row">
+            <ul>
+    			<li>Each delegation can only have ONE head delegate.</li>
+    			<li>The deadline for submitting the form is 10th September.</li>
+    			<li>The delegation fee and the participation fee for all delegates must be paid at LGS Paragon. The school office will be open for delegates to visit once classes resume from 15th August, between the hours of 8 a.m and 3 p.m.</li>
+            </ul>
+            *  The head delegate must be in contact with the registration team at the time of payment.
+		</div>	
+        <div class="row">
+            <a href="/form.php" class="btn btn-info btn-block">REGISTER NOW</a>
+        </div>
+        <div class="fee-table">
+            <div class="subheading row">
+                Fee Structure
+            </div><br>
+            <div class="row">
+                <div class="col-xs-8">
+                    Delegation Fee (Institution)
+                </div>
+                <div class="col-xs-4">
+                    PKR 3000
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    Delegation Fee (Private)
+                </div>
+                <div class="col-xs-4">
+                    PKR 1000
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    Participation Fee for Single event
+                </div>
+                <div class="col-xs-4">
+                    PKR 1800
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    Participation Fee for two events
+                </div>
+                <div class="col-xs-4">
+                    PKR 2000
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    Participation Fee for three events
+                </div>
+                <div class="col-xs-4">
+                    PKR 2200
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            (The registration fee includes entry for all the Social Events for all the days of Grammar Fest '16).<br>
+            NOTE: A PARTICIPANT CANNOT OPT FOR MORE THAN 3 EVENTS.
+        </div>
+        <div class="row questions">
+            For questions and queries about accomodation for participants from schools / institutes outside of lahore, contact:
+        </div>
+        <div class="row">
+            {{ include('/team/image.html', {name:'Shanzeh Afnan', pos:'Co-Director Accommodations', img:'shanzeh_afnan', number:'', class:'col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3'}) }}
+        </div>
+        <div class="row subheading">
+            Payment Method
+        </div>
+        <div class="row">
+            <ul>
+                <li>Schools/institutions in Lahore must pay in cash which is to be submitted to the administration office at LGS Paragon's campus.</li>
+                <li>Schools/institutions from outside of Lahore will be paying through a bank draft in the name of “Naila Wajid”. The bank draft or cash submitted will contain payment for all the school/institution’s registration fee and later participation fee.</li>
+            </ul>
+        </div><br><br>
+        <div class="row">
+            For further queries, contact our registration team:
+        </div><br>
+        <div class="row">
+            {{ include('/team/image.html', {name:'Ayesha Ahmad', pos:'Director Registrations', img:'ayesha_ahmad', number:'0333-4339928', class:'col-xs-6'}) }}
+            {{ include('/team/image.html', {name:'Abbas Hassan', pos:'Co-Director Registrations', img:'abbas_hassan', number:'0321-4075070', class:'col-xs-6'}) }}
+        </div>
+        <div class="row">
+            {{ include('/team/image.html', {name:'Muneeb Kashif', pos:'Director IT', img:'muneeb_kashif', number:'0333-4600488', class:'col-xs-6'}) }}
+            {{ include('/team/image.html', {name:'Areeb Lutfi', pos:'Director Finance', img:'areeb_lutfi', number:'0331-4191779', class:'col-xs-6'}) }}
+        </div>
+        <div class="end">
+            <div>
+                <span id="disclaimer">DISCLAIMER:</span>
+                The management will not be responsible for any clashes. Please review the schedule before a participant is registered for multiple events.
+            </div>
+            <div>
+                <span id="note">NOTE:</span> Delegates will not be allowed to leave the school premises until approximately 8PM, once they have entered.
+            </div>
+        </div>
+	</div>
+</div>
+{% endblock %}

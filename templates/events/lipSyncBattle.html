@@ -1,0 +1,33 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Lip Sync Battle{% endblock %}
+{% block nav_events_music %}active{% endblock %}
+{% block nav_events_lipSyncBattle %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/lipSyncBattle.jpg);
+{% endblock %}
+{% block event_title %}Lip Sync Battle{% endblock %}
+{% block event_head_pic %}mohid_amir{% endblock %}
+{% block event_head_name %}Mohid bin amir{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+	{{ include('/events/block.html', {text:' '}) }}
+    
+    Ever watched someone perform live on stage and wondered what it would be like if you were doing it? And then you realized you can’t actually sing like those people so you decided to give up on that dream. Well fear not! We present to you an event where you can turn these dreams into reality!!<br>
+    If you’ve ever stumbled across The Tonight Show Starring Jimmy Fallon or Spike TV, you know what this is, coming back with its second installment is The Lip Sync Battle.<br>
+    Whether you want to re-enact a cheesy Bollywood song or simply head bang on stage like rock star; it will be epic! Of course not as epic as Channing Tatum dressed as Elsa singing along to Let It Go.
+
+	{{ include('/events/block.html', {heading:'Rules', list:[
+		"Up to 15 teams with the capacity ranging from 2-6 people, each from a different institution, can participate only, therefore this is a first come, first serve event.",
+		"All teams must bring their own props and can perform any song they like; western or eastern, it should be appropriate and free of any sort of obscenity and vulgarity (so preferably avoid rap songs)",
+		"All performances should not be any longer than 5 minutes. Performances longer than that will be cut. It is suggested you edit your song or choose accordingly.",
+		"Sound system and the stage will be provided.",
+		"The performances will be judged on lip syncing skills more than the choreography; although that will hold points as well.",
+		"It is a single round event. The winners and the runner ups will go home with their own version of the Grammy.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Mohid Bin Amir - 0307-4731114
+
+{% endblock %}
+
+

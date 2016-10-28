@@ -1,0 +1,46 @@
+    {% extends "/events/events.html" %}
+{% block events_title %}Photography{% endblock %}
+{% block nav_events_media %}active{% endblock %}
+{% block nav_events_photography %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/photography.jpg);
+{% endblock %}
+{% block event_title %}Photography{% endblock %}
+{% block event_head_pic %}dania_khan{% endblock %}
+{% block event_head_name %}Dania Khan{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"Are you tired of hearing the cliche line that photography is all about 'capturing moments and beautiful things'? Do you feel there's more to it? Such as taking extraordinary pictures of ordinary objects and portraying them in a way that shows your individuality? Then you've come to the right place. Here at Grammarfest we provide you the platform to explore the hidden magic within yourself and present to us something more than just a photograph using nothing but your creativity and camera. So register now and don't miss out on one of the biggest photography summits of Lahore!"}) }}
+    
+    <br><li>Up to 3 teams allowed per institution </li>
+    <li>Each team may consist of a minimum of 2 members and a maximum of 4 team members.</li>
+
+     {{ include('/events/block.html', {heading:'Round 1: Theme Based Photography' }) }}
+
+    {{ include('/events/block.html', {heading:'Themes', list:[
+		"Silhouette",
+		"Fire",
+		"Vintage",
+        "Reflection",
+	]}) }}
+
+    Each team has to chose ONE theme and take a photograph according to it. There's no mandatory prop. These pictures have to be submitted by the 20th of september by email to grammarfestofficial@gmail.com
+
+    {{ include('/events/block.html', {heading:'Round 2: Product based photography', list:[
+		"One product will be allotted. All teams will have to circle their picture around that product, portraying its importance and qualities.",
+        "The photograph should be submitted by email. ",
+		"The teams which qualify this round will be eligible to participate in round 3.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Round 3: Campus Coverage', list:[
+		"The finalised teams will have to take photographs of the events being held on day 2. Each team will have to present a portfolio of 15 photographs of this day. Participants will not be allowed to take their memory cards home at the end of round 3.",
+        "One team will win this round.  ",
+		"Editing of pictures will not be allowed in any one of the 3 rounds and all pictures need to be taken in jpg format. ",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Dania Khan - 0336-8735783
+    <br>
+    Minjad (Co head photography) - 0336-4111299
+{% endblock %}

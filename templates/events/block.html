@@ -1,0 +1,15 @@
+<div class="block {{ class }}">
+	{% if heading %}
+		<strong>{{ heading }}</strong>
+	{% endif %}
+	{% if text %}
+		{{ text }}
+	{% endif %}
+	{% if list %}
+		<ul>
+			{% for item in list %}
+				<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>

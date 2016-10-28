@@ -1,0 +1,14 @@
+#panel {
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+
+    border-radius: 15px;
+    background: rgba(247, 247, 247, .48);
+}
+#main {
+    background-image: url(../../static/res/images/events/directions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

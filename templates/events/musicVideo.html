@@ -1,0 +1,29 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Music Video{% endblock %}
+{% block nav_events_media %}active{% endblock %}
+{% block nav_events_musicVideo %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/musicVideo.jpg);
+{% endblock %}
+{% block event_title %}Music Video{% endblock %}
+{% block event_head_pic %}izza_saif{% endblock %}
+{% block event_head_name %}Izza Saif{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"What do you get when you mash up filming and music? Only one of the greatest Grammarfest event! We are calling out to all you aspiring amateur film makers and music enthusiasts! This is your chance to use your imagination, creativity and filming skills and techniques to produce a brilliant music video. So get those creative juices flowing and show us what you've got!"}) }}
+
+    {{ include('/events/block.html', {heading:'A few things to keep in mind: ', list:[
+		"Make sure there is no sort of obscenity or vulgarity of any sort in the video you’ll create; it may be subjected to immediate disqualification.",
+        "The music video must not target any political, ethical or religious group whatsoever.",
+		"The length of each video must range between 3-5 minutes; no more, no less.",
+        "Late entries will not be taken into account, so please make sure you’re not losing this great opportunity of exhibiting your creativity just due to bad time management.",
+        "Plagiarism is punishable by DEATH.",
+        "It is recommended to use professional cameras (I’m pretty sure almost everyone owns a DSLR at this point).",
+        "Submit your final pieces through DVD or USB and make sure they are in MP4, AVI or WMW format.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Izza Saif - 0324-4377830
+
+{% endblock %}

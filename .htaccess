@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://grammarfest.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://registration.grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://registration.grammarfest.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://test.grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://test.grammarfest.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.grammarfest.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.registration.grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.registration.grammarfest.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.test.grammarfest.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.test.grammarfest.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+

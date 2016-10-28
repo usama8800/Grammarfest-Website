@@ -1,0 +1,42 @@
+#main {
+    background-image: url(/static/res/images/events/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#panel {
+    padding-top: 4%;
+    padding-right: 7%;
+    padding-bottom: 4%;
+    padding-left: 7%;
+
+    border-radius: 15px;
+    background: rgba(247, 247, 247, .48);
+}
+.contact-heading {
+    margin-bottom: 10%;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 4vh;
+    font-weight: 900;
+
+    text-align: center;
+}
+@media (min-width: 400px) {
+    .contact-heading {
+        font-size: 45pt;
+    }
+}
+.registration-team {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 4vh;
+
+    text-align: center;
+}
+@media (min-width: 400px) {
+    .registration-team {
+        font-size: 35pt;
+    }
+}

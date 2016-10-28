@@ -1,0 +1,65 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Literati{% endblock %}
+{% block nav_events_englishLiterature %}active{% endblock %}
+{% block nav_events_literati %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/literati.jpg);
+{% endblock %}
+{% block event_title %}Literati{% endblock %}
+{% block event_head_pic %}maira_asaad{% endblock %}
+{% block event_head_name %}Maira Asaad{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"“These are not books, lumps of lifeless paper, but minds alive on the shelves. From each of them goes out its own voice... and just as the touch of a button on our set will fill the room with music, so by taking down one of these volumes and opening it, one can call into range the voice of a man far distant in time and space, and hear him speaking to us, mind to mind, heart to heart.”"}) }}<br>
+
+    Art is expression, and expression of the human heart and mind lies in visuals, vocals, actions and words - each of these embodied at Grammar Fest, the arts and performing arts festival of the year. <br>
+
+    Paragon’s English Literary Society returns with Literati for the second time this year, at Grammar Fest! Whether you’re an avid, seasoned reader dedicated to authors and book kingdoms galore, or a writer with a story waiting to inspire, or a vocal poet ready to set fire with your passion and gusto, Literati is the event for you to be at this year! 
+    
+   
+    {{ include('/events/block.html', {heading:'Day 1: Timed Writing (1 hour) ', list:[
+		"Topics/themes will be emailed to the head delegate a week prior to Grammar Fest",
+		"Participants must make sure that the themes provided are clearly visible in the piece they produce",
+		"The writing must range from 750 words and above, and must be written within the given time limit ",
+        "The piece will be judged upon the basis of quality, creativity, language skills and sustenance of the prose",
+	]}) }}
+
+     {{ include('/events/block.html', {heading:'Day 2: Trivia (2 hours)', list:[
+		"Rounds will be based on contemporary books (fiction and non-fiction), authors, characters, book-to-film adaptations and south asian literature ( categories may be added or removed later on)",
+	]}) }}
+    <li>The book list will be shared with the participants a week and a half prior to the event </li>
+    <li>There will be three rounds within Literary Trivia*:</li><br>
+
+    <i>Round I: Rapid Fire</i>
+    <li>Participants will have 10 seconds to answer the question displayed on the screen on a given answer sheet </li><br>
+
+    <i>Round II: Visual Judgements </i>
+    <li>Pictures will be displayed on-screen, and participants will have to identify them according to the given options. The picture will be displayed for 10 seconds, and the participants will have a further 10 seconds to jot down their answer. </li><br>
+   
+    <i>Round III: Charades</i>
+    <li>Teams will take turns selecting chits randomly, and will have one and a half minutes to act out the character for their team members to guess. Failing to guess within the prescribed time will result in negative marking.</li><br>
+
+    {{ include('/events/block.html', {heading:'Day 3: Poetry Slam',}) }}
+
+    Slam poetry is something that has been around for a few decades. Urban dictionary defines it as a type of poetry expressing a person’s personal story and/or struggle usually in an intensely emotional style; very powerful, sincere, and moving. Participants will be given a range of topics to choose from. <br><br>
+
+    <li>Topics will be emailed to the head delegate a week and a half prior to the event. Introductory guides to slam poetry will be attached to aid participants </li>
+    <li>Written content must be submitted three days before the poetry slam event will begin so that it may be reviewed.</li>
+    <li>The written content must be an original work by the participant. Plagiarism will result in immediate disqualification.</li>
+    <li>The limit for readings will be three minutes and twenty seconds, and the minimum time will be two minutes and thirty seconds.</li>
+    <li>Participants will be judged on content, performance, and response from the audience.</li>
+
+    {{ include('/events/block.html', {heading:'Participation criteria for Literati:' }) }}
+
+    A minimum of four members are required to participate in Literati.<br>
+    For the first round, the head delegate must designate one person to take part in timed writing.<br>
+    For round two, the entire team must take part.<br>
+    For round three, the head delegate must designate one member of their team to participate.<br>
+    *Please note that the same participant who took part in round one cannot take part in round three.
+    If there are any clashes at the time of the event, please contact the event head
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Maira Asaad - 0322-6247222
+    
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Short Filming{% endblock %}
+{% block nav_events_media %}active{% endblock %}
+{% block nav_events_shortFilming %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/shortfilming.jpg);
+{% endblock %}
+{% block event_title %}Short Filming{% endblock %}
+{% block event_head_pic %}hamna_aziz{% endblock %}
+{% block event_head_name %}Hamna Aziz{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+{{ include('/events/block.html', {text:"Do you ever suddenly zone out, day-dreaming while watching a movie, replacing yourself with one of the actors? Do you have a brilliant script, but feel bad about not making it into the film industry? If any of the above is true, HAVE NO FEAR,GRAMMARFEST IS HERE! This is the place for you! Like every year, we expect to be amazed by the talented youth of Pakistan, whose short films have never failed to astound us. Let’s see if you guys can break the record by producing even more impressive 5 to 8 minutes long films!
+Perhaps the most basic yet competitive category, this year we will be adding more limitations to hopefully check the quality of films received. This will in turn not only bring out better films but also make selection easier."}) }}
+
+{{ include('/events/block.html', {heading:'Theme set for short filming is school and society; you are free to interpret this theme in any of the genres.', }) }}
+
+ {{ include('/events/block.html', {heading:'Rules:', list:[
+		"Each team should consist of 4-6 participants.",
+        "Each school can send up to 2 teams in this category.",
+		"English, Urdu and Punjabi can be used as the language for the film.",
+        "Non-English language works must have English subtitles at the time submitted. Dialogue lists will not be accepted.",
+        "The video must be 5-8 minutes long, including front and back credits.",
+	]}) }}
+
+{{ include('/events/block.html', {heading:'Judging criteria', list:[
+		"Content",
+        "Creativity",
+		"Coherence with the topic",
+        "Production",
+        "Cinematography",
+        "Editing",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Awards:', list:[
+		"Best short film",
+        "Runners up short film",
+	]}) }}
+
+    * Jury and Results: The renowned filmmakers and media persons will be choosing the winners.
+
+     {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Hamna Aziz - 0302-4107131
+
+{% endblock %}

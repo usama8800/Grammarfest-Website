@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/plugins/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/plugins/Bootstrap/css/bootstrap-submenu.min.css" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="shortcut icon" href="/static/res/images/favicon_64.ico">
+    <link rel="shortcut icon" href="/static/res/images/favicon_32.ico">
+    <link rel="shortcut icon" href="/static/res/images/favicon_16.ico">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret+One|Orbitron:400,500,900|Inconsolata">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block before_navbar %}{% endblock %}
+    <!-- Navigation Bar -->
+    <nav class="navbar {% block navbar_class %}{% endblock %} navbar-custom" id="navbar" data-spy="affix">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-img navbar-brand" href="/index.php"><img class="navbar-img" src="/static/res/images/logo-small.png" /></a>
+            </div>
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="nav-menu-items">
+                <ul class="nav navbar-nav">
+                    <li class="{% block nav_home %}{% endblock %}"><a href="/index.php">Home</a></li>
+                    <li class="dropdown {% block nav_events %}{% endblock %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-submenu>Events <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_arts %}{% endblock %}">Arts</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_stillLife %}{% endblock %}"><a href="/events.php?event=stillLife">Still Life</a></li>
+                                    <li class="{% block nav_events_thematicArt %}{% endblock %}"><a href="/events.php?event=thematicArt">Thematic Art</a></li>
+                                    <li class="{% block nav_events_sketching %}{% endblock %}"><a href="/events.php?event=sketching">Sketching</a></li>
+                                    <li class="{% block nav_events_graffiti %}{% endblock %}"><a href="/events.php?event=graffiti">Graffiti</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_music %}{% endblock %}">Music</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_instrumental %}{% endblock %}"><a href="/events.php?event=instrumental">Instrumental</a></li>
+                                    <li class="{% block nav_events_battleOfTheBands %}{% endblock %}"><a href="/events.php?event=battleOfTheBands">Battle of the Bands</a></li>
+                                    <li class="{% block nav_events_westernSinging %}{% endblock %}"><a href="/events.php?event=westernSinging">Western Singing</a></li>
+                                    <li class="{% block nav_events_easternSinging %}{% endblock %}"><a href="/events.php?event=easternSinging">Eastern Singing</a></li>
+                                    <li class="{% block nav_events_lipSyncBattle %}{% endblock %}"><a href="/events.php?event=lipSyncBattle">Lip Sync Battle</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_dramatics %}{% endblock %}">Dramatics</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_oneActPlay %}{% endblock %}"><a href="/events.php?event=oneActPlay">One Act Play</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_media %}{% endblock %}">Media</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_adMaking %}{% endblock %}"><a href="/events.php?event=adMaking">Ad-Making</a></li>
+                                    <li class="{% block nav_events_photography %}{% endblock %}"><a href="/events.php?event=photography">Photography</a></li>
+                                    <li class="{% block nav_events_shortFilming %}{% endblock %}"><a href="/events.php?event=shortFilming">Short Filming</a></li>
+                                    <li class="{% block nav_events_musicVideo %}{% endblock %}"><a href="/events.php?event=musicVideo">Music Video</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_englishLiterature %}{% endblock %}">English Literature</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_literati %}{% endblock %}"><a href="/events.php?event=literati">Literati</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_danzaKuduro %}{% endblock %}">Danza Kuduro</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_soloDancing %}{% endblock %}"><a href="/events.php?event=soloDancing">Solo Dancing</a></li>
+                                    <li class="{% block nav_events_teamDancing %}{% endblock %}"><a href="/events.php?event=teamDancing">Team Dancing</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="{% block nav_events_fashion %}{% endblock %}">Fashion</a>
+                                <ul class="dropdown-menu">
+                                    <li class="{% block nav_events_runway %}{% endblock %}"><a href="/events.php?event=runway">Runway</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="{% block nav_schedule %}{% endblock %}"><a href="/schedule.php">Schedule</a></li>
+                    <li class="dropdown {% block nav_team %}{% endblock %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="{% block nav_team_directorate %}{% endblock %}"><a href="/team.php?team=directorate">Directorate</a></li>
+                            <li class="{% block nav_team_conveners %}{% endblock %}"><a href="/team.php?team=conveners">Conveners</a></li>
+                        </ul>
+                    </li>
+                    <li class="{% block nav_registration %}{% endblock %}"><a href="/registration.php">Registration</a></li>
+                    <li class="{% block nav_contact %}{% endblock %}"><a href="/contact.php">Contact Us </a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="{% block nav_directions %}{% endblock %}"><a href="/directions.php"><span class="glyphicon glyphicon-map-marker"></span> Directions</a></li>
+                </ul>
+            </div> <!-- menu items navbar end -->
+            
+        </div>
+    </nav>
+    {% block body %}{% endblock %}
+    <div id="to-top">
+        <div class="glyphicon glyphicon-menu-up"></div>
+    </div>
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>Designed By: <a class="designer" href="https://www.facebook.com/muneeb.kashif" target="_blank">Muneeb Kashif</a> and <a class="designer" href="https://www.facebook.com/ahsan8800" target="_blank">Usama Ahsan</a></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>Special thanks to: <a class="designer" href="https://www.facebook.com/faateh.binhamad" target="_blank">Faateh Bin Hamad</a>,  <a class="designer" href="https://www.facebook.com/KeepCalmAndBeAShadowHunter" target="_blank">Maira Asaad </a>and 
+                <a class="designer" href="https://www.facebook.com/areeblutfi" target="_blank">Areeb Lutfi</a></h4>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-xs-12">
+                <span class="glyphicon glyphicon-copyright-mark"></span> copyrights reserved Grammar Fest LGS Paragon
+            </div>
+        </div>
+    </div>
+    <div id="social-links">
+        <a id="facebook" class="social-link" href="https://www.facebook.com/GrammarFestPakistan" target="gffb"><span class="helper"></span><img src="/static/res/images/facebook.png"  />Facebook</a>
+        <a id="instagram" class="social-link" href="https://instagram.com/grammarfest16" target="gfins"><span class="helper"></span><img src="/static/res/images/instagram.png" />Instagram</a>
+    </div>
+    <script src="/static/plugins/jquery.min.js"></script>
+    <script src="/static/plugins/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/plugins/Bootstrap/js/bootstrap-submenu.min.js"></script>
+    <script src="/static/js/base.js"></script>
+{% block js %}{% endblock %}
+<script>
+$('[data-submenu]').submenupicker();
+</script>
+</body>
+</html>

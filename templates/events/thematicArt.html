@@ -1,0 +1,44 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Thematic Art{% endblock %}
+{% block nav_events_arts %}active{% endblock %}
+{% block nav_events_thematicArt %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/thematicArt.jpg);
+{% endblock %}
+{% block event_title %}Thematic Art{% endblock %}
+{% block event_head_pic %}shahbano_ali{% endblock %}
+{% block event_head_name %}Shahbano Ali{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+    {{ include('/events/block.html', {text:"The perfect form of restrictions in art! This event awaits you with its most captivating and enduring themes. This event tests your ability to observe and compose brilliantly with your skills and technique shown on canvas. "}) }}
+
+    {{ include('/events/block.html', {heading:'Theme' }) }}
+    Tommorow and Unforgettable moments
+
+    {{ include('/events/block.html', {heading:'Rules', list:[
+		"There is a limit paper size (maximum) size of 20''x30''. There is no restrictions to minimum paper size.",
+		"Participants can work in any medium.",
+		"Reference images are allowed.",
+        "All participants should bring their own material, sharing is prohibited.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Structure and criteria', list:[
+		"All participants should expect the judging criteria to be along the lines of quality, creativity and adaptation to the rules.",
+		"The directors and organizers reserve the right to make any changes to the event.",
+		"The competition is not limited to arts students only, anyone can participate.",
+        "Everyone MUST refrain from portraying nudity or obscenity.",
+        "Each student can give only one submission.",
+	]}) }}
+    
+    {{ include('/events/block.html', {heading:'Awards', list:[
+		"1st Position (winner)",
+		"2nd Position (runner up)",
+		"3rd Position",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Shahbano Ali - 0300-0846003
+    
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Western Singing{% endblock %}
+{% block nav_events_music %}active{% endblock %}
+{% block nav_events_westernSinging %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/westernSinging.jpg);
+{% endblock %}
+{% block event_title %}Western Singing{% endblock %}
+{% block event_head_pic %}abiya_shah{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_head_name %}Abiya Shah{% endblock %}
+{% block event_details %}
+	{{ include('/events/block.html', {text:"Do you have a soul voice? Do you find yourself passionately singing to Adele songs into your hairbrush? Or do you think you have what it takes to WIN THE X FACTO- okay that’s a bit too much, but if you enjoy singing then this is the event for you! We provide you with the opportunity to prove to the world that you’re more than just a bathroom singer. So get ready to sing in Falsetto and hit high notes that will blow people’s socks off!"}) }}
+
+	{{ include('/events/block.html', {heading:'Rules', list:[
+		'The event consists of three rounds, a new song must be prepared for each round.',
+		'Participants are allowed to use ONE instrument during their performance.',
+		'You will be provided 5 minutes of stage time, which includes setting up your instruments and performing.',
+		'Be on time to ensure sound checks are done prior to the event, if not then they will take place during the allotted stage time.',
+		'Participants must bring their own backing tracks and submit them to the concerned management beforehand.',
+		'Medleys/ Mash ups or Lyrical content to aid your performance are unacceptable.',
+		'Participants should make sure their songs are not in any way obscene or vulgar. ',
+	]}) }}
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Abiya Shah - 0334-5069129
+{% endblock %}

@@ -1,0 +1,21 @@
+#panel {
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+
+    border-radius: 15px;
+    background: rgba(247, 247, 247, .48);
+}
+
+#main {
+    background-image: url(../res/images/events/schedule.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    font-size: 2vw;
+
+    text-align: center;
+}

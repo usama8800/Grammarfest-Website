@@ -1,0 +1,10 @@
+<div id="delegate-{{ num }}">
+	<div class="subheading" >Delegate {{ num }}</div>
+	{{ include('/formInput.html', {type:"text", label:"Delegate Name", id:"delegate-#{ num }-name", attrs:'data-validation="custom" data-validation-regexp="^[- -zA-Z\']+$" data-validation-error-msg="That is not a valid name"'}) }}
+	{{ include('/formInput.html', {type:"file", label:"Photograph", id:"delegate-#{ num }-pic", attrs:'accept="image/*"'}) }}
+	{{ include('/formInput.html', {type:"text", label:"Delegate Number", id:"delegate-#{ num }-number", attrs:'data-validation="number"'}) }}
+	{{ include('/formInput.html', {type:"text", label:"Delegate Email", id:"delegate-#{ num }-email", attrs:'data-validation="email"'}) }}
+	{{ include('/formInput.html', {type:"event", label:"Event 1", id:"delegate-#{ num }-event-1", attrs:'data-validation="required"'}) }}
+	{{ include('/formInput.html', {type:"event", label:"Event 2", id:"delegate-#{ num }-event-2"}) }}
+	{{ include('/formInput.html', {type:"event", label:"Event 3", id:"delegate-#{ num }-event-3"}) }}
+</div>

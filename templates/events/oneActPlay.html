@@ -1,0 +1,41 @@
+{% extends "/events/events.html" %}
+{% block events_title %}One Act Play{% endblock %}
+{% block nav_events_dramatics %}active{% endblock %}
+{% block nav_events_oneActPlay %}active{% endblock %}
+{% block event_bg %}
+    background-image: url(/static/res/images/events/oneActPlay.jpg);
+{% endblock %}
+{% block event_title %}One Act Play{% endblock %}
+{% block event_head_pic %}zain_haroon{% endblock %}
+{% block event_head_pos %}event head{% endblock %}
+{% block event_head_name %}Zain Haroon{% endblock %}
+{% block event_details %}
+	{{ include('/events/block.html', {text:"Drama is an art form; one that, like all other arts, is in essence an expression of human emotion. Here at LGS Paragon, acting is an art that extends far beyond the stage. You’ll find a theatre kid in most students wandering the corridors of LGS Paragon- possessing either of two desires: to be someone else, or to find themselves. We’re quite sure those same kids wander the corridors of your school, too.
+    "}) }}
+    So this one’s for all you theatre kids with a flair for the dramatic, for the liberation to be found within a character not your own; for the laughter, the tears, the glee, and the utter despair of the audience.  
+
+    <br>That is why this year, at Grammar Fest, we offer you the opportunity to come on stage and deliver a promising, cathartic performance that will stir the audience, yourselves, and the judges! Avail the opportunity while you can for what is bound to be both an invigorating learning experience, and a heated competition for you! 
+
+	{{ include('/events/block.html', {heading:'Rules', list:[
+		"The dramatics event will consist of a one act play.",
+		"The time limit for this play will be 20 minutes.",
+		"The time limit for this play will be 20 minutes.",
+		"Each dramatics team can have a maximum of 20 members including actors and their backstage crew.",
+		"Two rounds will be held. After the first round, 3 teams will be moving forward with the rest eliminated to perform on the final performance night.",
+		"The first round play will be held on the first day of the event and it will be based on the topic the team has chosen themselves.",
+		"The second round play will also be on a topic that the team has prepared and decided themselves.",
+        "The participants will be provided with the lights and a technician and they along with him will handle the lights.",
+        "Props, lighting and backstage equipment will be handled by the team themselves.",
+        "The play must not contain any explicit content, religious/political jokes of any kind.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'They will be judged on the following;', list:[
+		"The originality of the script",
+		"The performance by the actors",
+		"Handling of lights, props, sound and the overall efficiency of the play",
+		"The integration of the topic into the crux of the play.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Zain Haroon - 0310-4824391
+{% endblock %}

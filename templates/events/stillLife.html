@@ -1,0 +1,46 @@
+{% extends "events/events.html" %}
+{% block events_title %}Still Life{% endblock %}
+{% block nav_events_arts %}active{% endblock %}
+{% block nav_events_stillLife %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/stillLife.jpg);
+{% endblock %}
+{% block event_title %}Still Life{% endblock %}
+{% block event_head_pic %}sheharbano_syed{% endblock %}
+{% block event_head_name %}Shehr Bano Syed{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"This event puts several of your abilities to the test, including observation, composition and the basic skill/ technique shown. Hope you have them with you (along with your essential art supplies)."}) }}
+    
+    {{ include('/events/block.html', {heading:'Theme' }) }}
+    Garden Tools
+
+    {{ include('/events/block.html', {heading:'Rules', list:[
+		"Participants must bring their own still life objects.",
+		"Reference images are not allowed for this category.",
+		"Participants can work in any medium; Water color, pen and ink, soft pastels etc.",
+        "The piece should be original and should not be a creation of an already existing artwork.",
+        "All participants should bring their own material, sharing is prohibited.",
+        "The paper size for still life has no restrictions.",
+	]}) }}
+
+     {{ include('/events/block.html', {heading:'Structure and criteria', list:[
+		"All participants should expect the judging criteria to be along the lines of quality, creativity and adaptation to the rules.",
+		"The directors and organizers reserve the right to make any changes to the event.",
+		"The competition is not limited to arts students only, anyone can participate.",
+        "Everyone MUST refrain from portraying nudity or obscenity.",
+        "Each student can give only one submission.",
+	]}) }}
+    
+    {{ include('/events/block.html', {heading:'Awards', list:[
+		"1st Position (winner)",
+		"2nd Position (runner up)",
+		"3rd Position",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Shehr Bano Syed - 0303-4000105
+    
+
+{% endblock %}

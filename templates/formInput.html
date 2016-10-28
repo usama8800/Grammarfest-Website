@@ -1,0 +1,64 @@
+<div class="form-group">
+    <label for="{{ id }}" class="col-xs-12 col-sm-4 control-label">{{ label }}</label>
+
+    <div class="col-xs-12 col-sm-8">
+        {% if type == 'text' %}
+            <input class="form-control {% if class %}{{ class }}{% endif %}" id="{{ id }}" name="{{ id }}" placeholder="{% if placeholder %}{{ placeholder }}{% else %}{{ label }}{% endif %}" {% if attrs %}{{ attrs|raw }}{% endif %}>
+        {% elseif type == 'radio' %}
+            {% for option in options %}
+                <div class="radio">
+                    <label>
+                        <input type="radio" class="{% if class %}{{ class }}{% endif %}" name="{{ option.name }}" id="{{ option.id }}" value="{{ option.value }}" {% if option.attrs %}{{ option.attrs|raw }}{% endif %}>
+                        {% if option.label %}
+                            {{ option.label }}
+                        {% else %}
+                            {{ option.value }}
+                        {% endif %}
+                    </label>
+                </div>
+            {% endfor %}
+        {% elseif type == 'file' %}
+            <label class="form-control btn btn-default" for="{{ id }}" style="overflow:auto;">
+                <input id="{{ id }}" name="{{ id }}" type="file" style="display:none;" data-validation-optional="true" {% if attrs %}{{ attrs|raw }}{% endif %}>
+                <span id="{{ id }}-span">Choose photo...</span>
+            </label>
+        {% elseif type == 'event' %}
+            <select id="{{ id }}" name="{{ id }}" class="form-control" {% if attrs %}{{ attrs|raw }}{% endif %}>
+                <option disabled selected value>Select an option</option>
+                <optgroup label="Arts">
+                    <option>Still Life</option>
+                    <option>Thematic Arts</option>
+                    <option>Sketching</option>
+                    <option>Graffiti</option>
+                </optgroup>
+                <optgroup label="Music">
+                    <option>Instrumental</option>
+                    <option>Battle of Bands</option>
+                    <option>Western Singing</option>
+                    <option>Eastern Singing</option>
+                    <option>Lip Sync Battle</option>
+                </optgroup>
+                <optgroup label="Dramatics">
+                    <option>One Act Play</option>
+                </optgroup>
+                <optgroup label="Media">
+                    <option>Ad-Making</option>
+                    <option>Photography</option>
+                    <option>Short Filming</option>
+                    <option>Music Video</option>
+                </optgroup>
+                <optgroup label="English Literature">
+                    <option>Literati</option>
+                </optgroup>
+                <optgroup label="Danza Kuduro">
+                    <option>Solo Dancing</option>
+                    <option>Team Dancing</option>
+                </optgroup>
+                <optgroup label="Fashion">
+                    <option>Runway</option>
+                </optgroup>
+            </select>
+        {% endif %}
+    </div>
+   
+</div>

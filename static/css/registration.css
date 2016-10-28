@@ -1,0 +1,86 @@
+#main {
+    background-image: url(../../static/res/images/events/registration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#panel {
+    padding-top: 4%;
+    padding-right: 14%;
+    padding-bottom: 4%;
+    padding-left: 14%;
+
+    border-radius: 15px;
+    background: rgba(247, 247, 247, .48);
+}
+.row {
+    font-family: "Poiret One", cursive;
+    font-size: 13pt;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.registration-heading {
+    margin-bottom: 10%;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 3vh;
+    font-weight: 900;
+
+    text-align: center;
+    /*letter-spacing: .1em;*/
+}
+
+@media (min-width: 600px) {
+    .registration-heading {
+        font-size: 4vw;
+    }
+}
+
+a.btn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 15pt;
+/*    font-stretch: ultra-condensed;*/
+
+    letter-spacing: 10px;
+}
+@media (min-width: 600px) {
+    a.btn {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 450px) {
+    a.btn {
+        font-size: 10pt;
+    }
+}
+.fee-table {
+    margin-bottom: 10%;
+}
+.fee-table div.row:not(:first-child) {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+}
+.questions {
+    margin-top: 5%;
+
+    font-weight: bold;
+}
+.subheading {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+.end {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+}
+.end>div:not(:first-child) {
+    margin-top: 2%;
+}
+#disclaimer,
+#note {
+    font-weight: bold;
+}

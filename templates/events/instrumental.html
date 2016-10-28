@@ -1,0 +1,27 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Instrumental{% endblock %}
+{% block nav_events_music %}active{% endblock %}
+{% block nav_events_instrumental %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/instrumental.jpg);
+{% endblock %}
+{% block event_title %}Instrumental{% endblock %}
+{% block event_head_pic %}ali_yaseen{% endblock %}
+{% block event_head_name %}Ali Yasin{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:"Have you ever dreamt of leaving an audience awestruck after nailing your favorite solo, or pulling off a complex piece of classical music on the piano? Well, grab your instrument of choice, be it something as common as the guitar or the drums or something as unusual as the pan flute, and start practicing, because we’re about to provide you with the perfect opportunity to unleash your inner virtuoso!"}) }}
+
+	{{ include('/events/block.html', {heading:'Rules', list:[
+		"Each team may consist of 5 participants per school/institution",
+		"Each participant will be given 2 minutes for the sound check and another 5 minutes to perform.",
+		"Each team may consist of 1 to 3 participants.",
+		"Participants will only be provided with a standard drum kit. Any additional equipment must be brought by the participants.",
+		"Keyboardists must perform solo.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Ali Yasin - 0303-7957369
+    
+{% endblock %}

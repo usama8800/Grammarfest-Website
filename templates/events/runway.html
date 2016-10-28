@@ -1,0 +1,67 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Runway{% endblock %}
+{% block nav_events_fashion %}active{% endblock %}
+{% block nav_events_runway %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/runway.jpg);
+{% endblock %}
+{% block event_title %}Runway{% endblock %}
+{% block event_head_pic %}alizeh_jaffri{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_head_name %}alizeh jaffri{% endblock %}
+{% block event_details %}
+
+	{{ include('/events/block.html', {text:'To some people fashion is a way to express their individuality, but to us, fashion is a challenge. Here at Grammarfest, we invite you to come and drown in a whole new world of fashion. You will not only have to explore new genres, but you will get the opportunity to inculcate great themes into your clothing. So hurry and sign up for the one of its kind fashion show in all of Lahore, here at Grammarfest; glamour awaits you.'}) }}
+
+	{{ include('/events/block.html', {heading:'Event Format:', list:[
+		'Fashion Show',
+		'Fashion presentation by the host team',
+		'Ramp walk for a social cause',
+	]}) }}
+    {{ include('/events/block.html', {heading:'Themes:', list:[
+		'A total of 4 themes, which will be soon disclosed.',
+	]}) }}
+
+<!--
+    - Floral <br>
+    - Cosmic Wonder <br>
+    - Pastelification <br>
+-->
+<!--    * Teams will be provided with an opportunity to bring out the designer in them and showcase their creativity through their costume. Hence, they will be given a chance to come up with one theme and present their design at the fashion show. A mood board is to be submitted for this design along with 3 portfolios of the costumes for the given themes.-->
+    
+     {{ include('/events/block.html', {heading:'Fashion Show:', list:[
+		'The ramp walk will be theme wise. The themes will be announced and models from each team representing that theme will walk the ramp.',
+		'Submission of 3 portfolios and 1 mood board is mandatory, 1 week prior to the event. In case of failure to submit portfolios and mood board, the team will be disqualified with non refundable registration fee.',
+        'A green room will be provided for changing purposes only.',
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Teams:', list:[
+		'3 teams per school/institution only.',
+		'All teams must consist of 4 models. Each model must represent one theme.',
+        'The team must consist of a designer, make up artist and a manager.',
+        'Teams must bring their own props and costumes.',
+        'No additional supporting staff or supplies will be provided by the management of Grammarfest.',
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Point structure and elimination:', list:[
+		'The costumes must clearly present the themes.',
+		'Use of materials such as candles, matches, cigarettes, weapons or any other hazardous material is strictly prohibited on stage and on campus.',
+        "Vulgarity of any kind will lead to instant disqualification of the entire team from the event. Also, if the President of Fashion Society finds any objectionable portfolios the team's designer will have to bring changes to them.",
+        "Teams will be judged on their creativity, styling, originality and style of walking. Also, the mood board submitted earlier will be taken into consideration to reach the final decision by the judges.",
+        "Scores of each team will be added simultaneously.",
+        "Decision of the judges will be final and binding.",
+        "The President of Fashion Society and organizers reserve the right to make any changes to the event.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Awards:', list:[
+        "Best Model (Male)",
+        "Best Model (Female)",
+        "Best Designer",
+        "Best Styling",
+        "Best Team",
+	]}) }}
+    {{ include('/events/block.html', {heading:'For further queries contact:', })}}
+
+    Alizeh Jaffri - 0334-2305406
+
+{% endblock %}

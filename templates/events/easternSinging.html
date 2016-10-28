@@ -1,0 +1,27 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Eastern Singing{% endblock %}
+{% block nav_events_music %}active{% endblock %}
+{% block nav_events_easternSinging %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/easternSinging.jpg);
+{% endblock %}
+{% block event_title %}Eastern Singing{% endblock %}
+{% block event_head_pic %}asad_sufi{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_head_name %}Asad Sufi{% endblock %}
+{% block event_details %}
+	{{ include('/events/block.html', {text:'Do you find yourself listening to your dad’s old playlist rather than the Billboard Top 100? Or do you prefer a good old fashioned Sufi track over Beyoncé’s new album? Then my friend you too realize that artists like Lorde, Justin Bieber and Taylor Swift have got nothing on the true meaning of music left to us by legends like Muhammad Rafi, Nusrat Fateh Ali Khan and Noor Jehan. It’s time to put your surr and raag skills to the test.'}) }}
+
+	{{ include('/events/block.html', {heading:'Rules', list:[
+		'The event consists of three rounds, a new song must be prepared for each round.',
+		'Participants are allowed to use ONE instrument during their performance.',
+		'You will be provided 5 minutes of stage time, which includes setting up your instruments and performing.',
+		'Be on time to ensure sound checks are done prior to the event, if not then they will take place during the allotted stage time.',
+		'Participants must bring their own backing tracks and submit them to the concerned management beforehand.',
+		'Medleys/ Mash ups or Lyrical content to aid your performance are unacceptable.',
+		'Participants should make sure their songs are not in any way obscene or vulgar. ',
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Asad Sufi - 0334-6969027
+{% endblock %}

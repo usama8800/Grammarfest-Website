@@ -1,0 +1,24 @@
+{% extends "/base.html" %}
+{% block title %}Page not found{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="/static/css/404.css" />
+{% endblock %}
+{% block navbar_class %}navbar-fixed-top{% endblock %}
+{% block body %}
+    <div id="main">
+        <div class="panel">
+            <div class="heading text-centered">
+                Error 404
+            </div>
+            {% if img %}
+                <div class="img">
+                    <img class="img-responsive img-rounded" src="/static/res/images/404/{{ img }}.jpg" />
+                </div>
+            {% endif %}
+            <div class="text text-centered">
+                You took a wrong turn somewhere.
+                <br> This page does not exist!
+            </div>
+        </div>
+    </div>
+{% endblock %}

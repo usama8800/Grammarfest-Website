@@ -1,0 +1,43 @@
+{% extends "/events/events.html" %}
+{% block events_title %}Sketching{% endblock %}
+{% block nav_events_arts %}active{% endblock %}
+{% block nav_events_sketching %}active{% endblock %}
+{% block event_bg %}
+	background-image: url(/static/res/images/events/sketching.jpg);
+{% endblock %}
+{% block event_title %}Sketching{% endblock %}
+{% block event_head_pic %}maryam_ali{% endblock %}
+{% block event_head_name %}Maryam ali{% endblock %}
+{% block event_head_pos %}event Head{% endblock %}
+{% block event_details %}
+
+    {{ include('/events/block.html', {text:"Are you ready to take the risk of spontaneously creating an artistic piece from an unexpected and unseen arrangement that we have carefully and thoughtfully chosen for you? For all you traditional artists, you have come to the right place. Show us your skills and techniques of realism and observation."}) }}
+
+    {{ include('/events/block.html', {heading:'Theme' }) }}
+    Portrait
+
+    {{ include('/events/block.html', {heading:'Rules', list:[
+		"Participants will be provided with a still life set up.",
+		"There is no limit to the paper size of sketching.",
+        "No reference images are allowed.",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'Structure and criteria', list:[
+		"All participants should expect the judging criteria to be along the lines of quality, creativity and adaptation to the rules.",
+		"The directors and organizers reserve the right to make any changes to the event.",
+		"The competition is not limited to arts students only, anyone can participate.",
+        "Everyone MUST refrain from portraying nudity or obscenity.",
+        "Each student can give only one submission.",
+	]}) }}
+    
+    {{ include('/events/block.html', {heading:'Awards', list:[
+		"1st Position (winner)",
+		"2nd Position (runner up)",
+		"3rd Position",
+	]}) }}
+
+    {{ include('/events/block.html', {heading:'For further queries contact:', }) }}
+    Maryam Ali - 0300-6968147
+    
+
+{% endblock %}
